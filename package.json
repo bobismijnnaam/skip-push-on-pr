@@ -1,0 +1,13 @@
+{
+  "name": "skip-push-on-pr",
+  "version": "1.0.0",
+  "description": "Skips a push event workflow run if it is predicated that a pull_request workflow run will occur.",
+  "main": "main.js",
+  "keywords": [],
+  "author": "Bob Rubbens",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "@actions/github": "^5.0.0"
+  }
+}
