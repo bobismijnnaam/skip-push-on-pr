@@ -1,6 +1,6 @@
 name: "skip-push-on-pr"
 
-description: "Skips a push event workflow run if it is predicated that a pull_request workflow run will occur."
+description: "Skips a push event workflow run if it is predicted that a pull_request workflow run will occur."
 
 inputs:
   GITHUB_TOKEN:
