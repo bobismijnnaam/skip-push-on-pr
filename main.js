@@ -46,7 +46,7 @@ async function getHeadOf(octokit, owner, repo, branch) {
 
 async function getPrsOnBranch(octokit, owner, repo, currentBranch) {
 	const { data } = await octokit.rest.pulls.list({
-		owner, repo, head: currentBranch
+		owner, repo, head: `${owner}:${currentBranch}`
 	});
 	console.log(data);
 	let prs = [];
