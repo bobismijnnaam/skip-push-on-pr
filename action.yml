@@ -1,22 +1,8 @@
-name: "my hello action"
+name: "skip-push-on-pr"
 
-description: "say hello with actions"
+description: "Skips a push event workflow run if it is predicated that a pull_request workflow run will occur."
 
 inputs:
-  first-greeting:
-    description: "who would you like to greet in the console"
-    required: true
-    default: "Hubot"
-
-  second-greeting:
-    description: "another person to greet"
-    required: true
-    default: "Mona the Octocat"
-
-  third-greeting:
-    description: "a third greeting"
-    required: false
-  
   GITHUB_TOKEN:
     description: "github authentication token secret"
     required: true
